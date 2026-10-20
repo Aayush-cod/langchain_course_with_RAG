@@ -3,4 +3,4 @@
 .venv/
 venv/
 
-/document_loaders/books/*.pdf
+/RAG-YoutubeChatbot/document_loaders/books/*.pdf
