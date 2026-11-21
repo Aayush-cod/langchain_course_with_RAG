@@ -16,7 +16,7 @@ template = PromptTemplate(
     input_variables = ['poem']
 )
 
-loader = TextLoader('document_loaders/cricket.txt', encoding = 'utf-8')
+loader = TextLoader('cricket.txt', encoding = 'utf-8')
 
 docs = loader.load()
 
@@ -38,7 +38,7 @@ print(docs[0].metadata)
 
 #Step2 : To add document loader as runnable lambda
 def load_document(_):
-    docs = TextLoader('document_loaders/cricket.txt', encoding = 'utf-8').load()
+    docs = TextLoader('cricket.txt', encoding = 'utf-8').load()
 
     return docs[0].page_content
     

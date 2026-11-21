@@ -1,7 +1,7 @@
 from langchain_community.document_loaders import DirectoryLoader , PyPDFLoader
 
 loader = DirectoryLoader(
-    path = 'document_loaders/books',
+    path = 'books',
     # golb denotes which file to load like pdf or txt ..
     glob = '*.pdf',
     loader_cls = PyPDFLoader
